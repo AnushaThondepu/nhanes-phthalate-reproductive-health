@@ -66,3 +66,24 @@ Then push:
 git add README.md
 git commit -m "Improve README formatting and project overview"
 git push origin main
+
+---
+
+## Key Visualizations
+
+### Study Flowchart
+
+![Study Flowchart](figures/flowchart.png)
+
+### Correlation Heatmap
+
+![Correlation Heatmap](figures/correlation%20heatmap.png)
+
+### Fully Adjusted Odds Ratios
+
+![Forest Plot](figures/forest_fully_adjusted_ORs.png)
+
+### Quartile Dose-Response Analysis
+
+![Quartile Analysis](figures/quartile_dose_response_fixed.png)
+
