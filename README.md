@@ -24,7 +24,8 @@ The project applies survey-weighted epidemiologic methods to evaluate dose-respo
 | Source | NHANES 2003–2014 |
 | Population | U.S. women aged 18–44 years |
 | Final analytic sample | N = 1,806 |
-| Study design | Cross-sectional complex survey |
+| Study design | Cross-sectional NHANES analysis |
+| Statistical approach | Survey-weighted logistic regression |
 | Data source | CDC NHANES |
 
 ---
@@ -86,4 +87,5 @@ git push origin main
 ### Quartile Dose-Response Analysis
 
 ![Quartile Analysis](figures/quartile_dose_response_fixed.png)
+
 
