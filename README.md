@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project examines associations between urinary phthalate metabolites and reproductive outcomes among U.S. women aged 18–44 years using NHANES 2003–2014 data.
+This repository contains reproducible R workflows and analytic materials for a master's thesis examining associations between urinary phthalate metabolites and reproductive outcomes among U.S. women using NHANES 2003–2014 data.
 
-The analysis uses survey-weighted logistic regression models to evaluate relationships between environmental exposure biomarkers and parity-related reproductive outcomes.
+The project applies survey-weighted epidemiologic methods to evaluate dose-response relationships between environmental exposure biomarkers and parity-related reproductive outcomes.
 
 ---
 
@@ -13,20 +13,23 @@ The analysis uses survey-weighted logistic regression models to evaluate relatio
 - Evaluate associations between urinary phthalate metabolites and parity
 - Assess dose-response trends across exposure quartiles
 - Examine cumulative exposure measures
-- Conduct sensitivity analyses for model robustness
+- Conduct sensitivity analyses for robustness assessment
 
 ---
 
 ## Dataset
 
-- NHANES 2003–2014
-- Nationally representative U.S. survey
-- Women aged 18–44 years
-- Final analytic sample: N = 1,806
+| Component | Description |
+|---|---|
+| Source | NHANES 2003–2014 |
+| Population | U.S. women aged 18–44 years |
+| Final analytic sample | N = 1,806 |
+| Study design | Cross-sectional complex survey |
+| Data source | CDC NHANES |
 
 ---
 
-## Methods
+## Statistical Methods
 
 - Survey-weighted logistic regression
 - NHANES complex survey weighting
@@ -41,34 +44,25 @@ The analysis uses survey-weighted logistic regression models to evaluate relatio
 
 - MBzP showed a modest positive association with parity
 - Quartile analyses suggested dose-response trends
-- Most metabolites showed estimates close to the null
-- Results should be interpreted cautiously due to cross-sectional design
+- Most metabolites showed estimates near the null
+- Findings should be interpreted cautiously due to cross-sectional design limitations
 
 ---
 
 ## Repository Structure
 
+```text
 data/           cleaned analytic datasets
 scripts/        R analysis scripts
 figures/        plots and visualizations
 outputs/        regression outputs and tables
 manuscript/     thesis PDF
 docs/           methodology and documentation
+requirements/   package installation scripts
 
----
+Then push:
 
-## Technologies Used
-
-- R
-- tidyverse
-- survey
-- haven
-- broom
-
----
-
-## Author
-
-Anusha Thondepu  
-MS Bioinformatics  
-University of Missouri–Kansas City
+```bash
+git add README.md
+git commit -m "Improve README formatting and project overview"
+git push origin main
